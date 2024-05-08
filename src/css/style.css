@@ -1,0 +1,101 @@
+/*
+  Breakpoints:
+  - Up to 600px width     Phone
+  - Up to 900px width     Tablet portrait
+  - Up to 1200px width    Tablet landscape
+  - Up to 1800px width    avg desktop
+
+$break arg choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+ */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+.test {
+  font-size: large;
+}
+
+.u-pos-relative {
+  position: relative;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-top-lg {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-xl {
+  margin-top: 10rem !important;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 8rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .u-margin-bottom-lg {
+    margin-bottom: 5rem !important;
+  }
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 4rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .u-margin-bottom-md {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-padding {
+  padding: 3rem;
+}
+
+.u-padding-x-sm {
+  padding: 0 3rem !important;
+}
+
+.u-underline {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
