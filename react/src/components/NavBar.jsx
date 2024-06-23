@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu } from "./Menu";
+import { Dropdown } from "./DropDown";
 
 function NavBar() {
   const [showOpenMenu, setShowOpenMenu] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(window.innerWidth > 1099 ? false : true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,7 +16,7 @@ function NavBar() {
   const onViewPortChange = (e) => {
     const { innerWidth } = e.currentTarget;
 
-    if (innerWidth > 1000) {
+    if (innerWidth > 1099) {
       setShowMenu(false);
       setShowOpenMenu(false);
     } else {
@@ -66,11 +67,10 @@ function NavBar() {
                 Profile
               </a>
             </div>
-            <div className="nav__item">
-              <div
-                onMouseEnter={onDropdownEnter}
-                onMouseLeave={onDropdownLeave}
-                className="nav__item--dropdown"
+            <div onMouseEnter={onDropdownEnter}
+                onMouseLeave={onDropdownLeave} 
+                className="nav__item">
+              <div className="nav__item--dropdown"
               >
                 <a className="nav-link" href="#">
                   About Us
@@ -84,40 +84,7 @@ function NavBar() {
                     ></i>
                   </span>
                 </a>
-                {showDropdown && (
-                  <ul className="dropdown">
-                    <li className="dropdown-item">
-                      <a href="#" className="dropdown-link">
-                        Our Story
-                      </a>
-                    </li>
-                    <li className="dropdown-item">
-                      <a href="#" className="dropdown-link">
-                        Non-profit
-                      </a>
-                    </li>
-                    <li className="dropdown-item">
-                      <a href="#" className="dropdown-link">
-                        Whom We Support
-                      </a>
-                    </li>
-                    <li className="dropdown-item">
-                      <a href="#" className="dropdown-link">
-                        Blog
-                      </a>
-                    </li>
-                    <li className="dropdown-item">
-                      <a href="#" className="dropdown-link">
-                        Podcast
-                      </a>
-                    </li>
-                    <li className="dropdown-item">
-                      <a href="#" className="dropdown-link">
-                        Volunteer
-                      </a>
-                    </li>
-                  </ul>
-                )}
+                {showDropdown && <Dropdown />}
               </div>
             </div>
             <div className="nav__item">
