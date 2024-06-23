@@ -57,6 +57,12 @@ $break arg choices:
       @content
     }
   }
+
+  @else {
+    @media only screen and (min-width: $break) {
+      @content
+    }
+  }
 }
 
 @mixin resolution($break) {
