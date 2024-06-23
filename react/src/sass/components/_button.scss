@@ -1,0 +1,33 @@
+.btn {
+    padding: .5rem;
+    border:none;
+    border-radius: 3px;
+    outline: none;
+  
+    cursor: pointer;
+    transition: all .3s;
+    font: inherit;
+    font-size: 80%;
+    font-weight: 600;
+    font-family: "Oxygen Mono", monospace;
+    transform: translateY(0) scale(1);
+  }
+  
+  .btn:active {
+    transform: translateY(1px) scale(.99);
+  
+  }
+  
+  .btn-atc {
+    background-color: $color-gold-dk;
+    color: $color-black;
+  }
+  .btn-atc:hover {
+    background-color: $color-gold;
+  }
+  
+  .btn-header {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+  

@@ -1,0 +1,84 @@
+{
+    "coffees": [
+      {
+        "id": 1,
+        "name": "Southern Weather",
+        "roaster": "Onyx"
+      },
+      {
+        "id": 2,
+        "name": "Hair Bender",
+        "roaster": "Stumptown"
+      },
+      {
+        "id": 3,
+        "name": "Big Trouble",
+        "roaster": "Counter Culture"
+      },
+      {
+        "id": 4,
+        "name": "Blue Boy",
+        "roaster": "Intelligentsia"
+      },
+      {
+        "id": 5,
+        "name": "Streetlevel",
+        "roaster": "Verve"
+      },
+      {
+        "id": 6,
+        "name": "Holler Mountain",
+        "roaster": "Stumptown"
+      },
+      {
+        "id": 7,
+        "name": "Geometry",
+        "roaster": "Onyx"
+      },
+      {
+        "id": 8,
+        "name": "Apollo",
+        "roaster": "Counter Culture"
+      },
+      {
+        "id": 9,
+        "name": "Black Cat Classic Espresso",
+        "roaster": "Intelligentsia"
+      },
+      {
+        "id": 10,
+        "name": "Sermon",
+        "roaster": "Verve"
+      },
+      {
+        "id": 11,
+        "name": "Giant Steps",
+        "roaster": "Blue Bottle"
+      },
+      {
+        "id": 12,
+        "name": "Three Africas",
+        "roaster": "Blue Bottle"
+      },
+      {
+        "id": 13,
+        "name": "Bella Donovan",
+        "roaster": "Blue Bottle"
+      },
+      {
+        "id": 14,
+        "name": "El Diablo",
+        "roaster": "Dark Matter"
+      },
+      {
+        "id": 15,
+        "name": "Finca El Puente",
+        "roaster": "Ritual"
+      },
+      {
+        "id": 16,
+        "name": "Timepiece",
+        "roaster": "Onyx"
+      }
+    ]
+  }

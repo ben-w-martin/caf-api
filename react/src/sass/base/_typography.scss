@@ -1,3 +1,23 @@
-.test {
-    font-size: large;
-}
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oxygen+Mono&display=swap");
+
+
+.alt-font {
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .subtext {
+    font-size: 80%;
+    color: $color-gray;
+    transition: all .3s;
+    font-weight: 300;
+  }
+  
+  .subtext:hover {
+  
+    color: $color-white;
+  }
+  
+  
