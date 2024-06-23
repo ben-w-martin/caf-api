@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu } from "./Menu";
-import { Dropdown } from "./DropDown";
+import { Dropdown } from "./Dropdown";
 
 function NavBar() {
   const [showOpenMenu, setShowOpenMenu] = useState(false);
